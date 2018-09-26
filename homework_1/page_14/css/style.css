@@ -1,0 +1,80 @@
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*Задание фонов*/
+header>div{
+	background-color: #dcdcdc;
+}
+header nav{
+ 	background-color: #f5f5dc; 
+}
+
+
+
+header>div>div{
+	display: flex;
+	justify-content: space-between;
+	min-height: 70px;	
+}
+header>div>div>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 35%;
+	background-color: #5f9ea0;
+}
+h2, h3{
+ 	text-align: center;
+ 	margin: 0;
+ }
+ul{
+ 	list-style-type: none;
+ 	padding-left: 0;
+ }
+ nav ul{
+	display: flex;
+	justify-content: space-between;
+	
+ }
+nav li, .block li{
+ 	background-color: #5f9ea0;
+ 	margin: 1em 0;
+ 	padding: 5px;
+}
+section{
+	display: flex;
+}
+.block{
+	width: 30%;
+
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.content ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin: 0 50px;
+}
+.content li{
+	margin: 10px 30px;
+}
+.content img{
+	display: block;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid rgba(10,20,30,0.6);
+}
+li span{
+	display: block;
+}
+footer{
+	background-color: #5f9ea0;
+	min-height: 70px;
+	line-height: 70px;
+}
