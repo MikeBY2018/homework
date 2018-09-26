@@ -1,0 +1,47 @@
+@media (max-width: 964px) {
+	.container{
+	max-width: 964px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+	header>div>div{
+	justify-content: space-around;
+	}
+	.content{
+	/*flex-grow: 2;*/
+	margin-right: 60px;
+	}
+
+	.content ul{
+	justify-content: space-around;
+	}
+
+	.block{
+	/*flex-grow: 1;*/
+	flex-shrink: 0.5;
+	width: 30%;
+	margin-right: 40px;
+	}
+
+}
+
+@media (max-width: 680px) {
+	header>div>div{
+	justify-content: space-around;
+	}
+	section{
+
+	}
+	.content {
+	width: 70%;
+
+	}
+	.content ul{
+	justify-content: center;
+	}
+	.block{
+	width: 30%;
+	margin: 0;
+	}
+}

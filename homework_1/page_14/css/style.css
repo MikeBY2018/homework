@@ -1,6 +1,7 @@
 .container{
-	max-width: 960px;
+	max-width: 1180px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 /*Задание фонов*/
@@ -33,11 +34,10 @@ h2, h3{
 ul{
  	list-style-type: none;
  	padding-left: 0;
- }
- nav ul{
+}
+nav ul{
 	display: flex;
-	justify-content: space-between;
-	
+	justify-content: space-between;	
  }
 nav li, .block li{
  	background-color: #5f9ea0;
@@ -49,6 +49,7 @@ section{
 }
 .block{
 	width: 30%;
+	margin-right: 60px;
 
 	font-weight: bold;
 	font-size: 1.2em;
@@ -57,11 +58,9 @@ section{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
-	margin: 0 50px;
 }
 .content li{
-	margin: 10px 30px;
+	margin: 0 0 25px 20px;
 }
 .content img{
 	display: block;
