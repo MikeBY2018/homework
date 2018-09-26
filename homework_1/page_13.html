@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox 3</title>
+	<style type = "text/css">
+		/*обнуляем отступы всех элементов*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body>div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			margin: auto;
+			width: 400px;
+			min-height: 400px;
+			
+			background-color: darkblue;
+		}
+		div>div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			background-color: yellow;
+
+			width: 250px;
+			height: 250px;
+		}
+		div>div>div{
+			background-color: red;
+
+			width: 50%;
+			height: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<div></div>
+		</div>
+	</div>
+	
+</body>
+</html>
