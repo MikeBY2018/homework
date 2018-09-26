@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flexbox 2</title>
+	<style type = "text/css">
+		/*обнуляем отступы всех элементов*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body>div{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+
+			width: 40%;
+			border: 2px solid black;
+			color: white;
+		}
+		div>div{
+			width: 25%;
+			min-height: 120px;
+
+			margin: 10px; 
+			background-color: darkblue;
+		}
+		div:nth-child(2){
+			height: 240px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+	
+</body>
+</html>
