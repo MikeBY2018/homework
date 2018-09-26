@@ -1,0 +1,14 @@
+#P1{
+	font-weight: bold;
+	color: darkred;
+	text-decoration: underline; 
+}
+#P2{
+	margin-top: 10px;
+	font-style: italic;
+	font-size: 1.1em;
+}
+
+#P2:hover{
+	background-color: green;
+}
