@@ -1,0 +1,15 @@
+@media (min-width: 780px) {
+	.wrapper{
+		max-width: 1200px;
+		padding-left: 10px;
+		padding-right: 10px;
+		background-color: silver;
+	}
+	.red{
+		margin-bottom: 20px;
+		margin-right: 10px;
+	}
+	.green{
+		width: 100%;
+	}
+}

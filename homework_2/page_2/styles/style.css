@@ -1,0 +1,30 @@
+@import url("style_des.css");
+@import url("style_iPad.css");
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	height: 100vh;	
+}
+.red{
+	background-color: #ee3226;
+}
+.orange{
+	background-color: #ff7f27;
+}
+.green{
+	background-color: #22b14c;
+}
+.braun{
+	background-color: #b97a57;
+}
+.blue{
+	background-color: #3f48cc;
+}
+.violet{
+	background-color: #a349a4;
+}
