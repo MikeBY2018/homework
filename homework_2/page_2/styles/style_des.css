@@ -1,15 +1,29 @@
-@media (min-width: 780px) {
+@media (min-width: 1024px) {
 	.wrapper{
 		max-width: 1200px;
 		padding-left: 10px;
 		padding-right: 10px;
-		background-color: silver;
 	}
-	.red{
-		margin-bottom: 20px;
+	.red{		
 		margin-right: 10px;
+		flex: 1 1 auto;
+	}
+	.orange{
+		flex: 3 0 auto;
 	}
 	.green{
 		width: 100%;
+		margin: 20px 0;
+		height: 60%;
+	}
+	.braun{
+		flex: 1 1 auto;
+	}	
+	.blue{
+		flex: 1 1 auto;
+		margin: 0 10px;		
+	}	
+	.violet{
+		flex: 1 1 auto;
 	}
 }
