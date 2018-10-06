@@ -1,14 +1,9 @@
 @import 'reset';
 
-
 $bgDivOut: darkblue;
 $bgDivMid: yellow;
 $bgDivInn: red;
-
-$fontDoc: Helvetica, Arial, sans-serif;
-$grow: 1;
-$margin8_9: 0px;
-$widthBox: 10%;
+$sizeBox: 400px;
 
 %container {
 	display: flex;
@@ -16,7 +11,25 @@ $widthBox: 10%;
 	align-items: center;
 }
 
-%exsclusive {
-	background-color: $bgDivChTwo;
-}
+body {
+	>div{
+		@extend %container;
+		margin: auto;
+		background-color: $bgDivOut;
+		width: $sizeBox;
+		height: $sizeBox;
 
+		>div{
+			@extend %container;
+			background-color: $bgDivMid;
+			width: $sizeBox*5/8;
+			height: $sizeBox*5/8;
+
+			>div{
+				background-color: $bgDivInn;
+				width: ($sizeBox*$sizeBox*5/16)/$sizeBox;
+				height: ($sizeBox*$sizeBox*5/16)/$sizeBox;
+			}
+		}
+	}
+}
