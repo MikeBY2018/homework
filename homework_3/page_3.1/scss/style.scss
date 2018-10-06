@@ -1,0 +1,51 @@
+$bgDivChOne: yellow;
+$bgDivChTwo: lime;
+$fontDoc: Helvetica, Arial, sans-serif;
+$grow: 1;
+$margin8_9: 0px;
+$widthBox: 10%;
+
+%container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+%exsclusive {
+	background-color: $bgDivChTwo;
+}
+
+@import 'reset';
+
+div {
+	div {
+		background-color: $bgDivChOne;
+		width: $widthBox;
+		height: 100px;
+		background-color: yellow;
+		flex-grow: $grow;
+		margin-right: 10px;	
+		
+		&:first-child {
+			@extend %exsclusive;
+		}
+
+		&:last-child{
+			@extend %exsclusive;
+			width: $widthBox * 10;
+			margin-top: 2em;
+			margin-right: $margin8_9;
+		}
+		&:nth-child(8){
+			width: $widthBox*1.2;
+			margin-right: $margin8_9;
+		}
+	}
+}
+
+body>div{
+	&:first-child{
+	@extend %container;
+	font-family: $fontDoc;
+	}	
+}

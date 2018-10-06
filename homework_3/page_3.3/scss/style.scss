@@ -1,0 +1,22 @@
+@import 'reset';
+
+
+$bgDivOut: darkblue;
+$bgDivMid: yellow;
+$bgDivInn: red;
+
+$fontDoc: Helvetica, Arial, sans-serif;
+$grow: 1;
+$margin8_9: 0px;
+$widthBox: 10%;
+
+%container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+%exsclusive {
+	background-color: $bgDivChTwo;
+}
+

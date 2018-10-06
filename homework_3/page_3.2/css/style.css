@@ -1,0 +1,25 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  line-height: 1; }
+
+body > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  color: lightgray;
+  border: 2px solid darkgrey;
+  width: 40%;
+  font: 2em Roboto, Arial, sans-serif; }
+
+div > div {
+  width: 25%;
+  min-height: 120px;
+  margin: 10px;
+  background-color: darkblue; }
+  div > div:nth-child(2) {
+    min-height: 240px; }
