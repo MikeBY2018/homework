@@ -1,0 +1,29 @@
+@media (max-width: $widthScreen - 710px)
+	@mixin fontDoc01($Family)
+		font-fanily: $Family + $fontend
+	header
+		div
+			div
+				min-height: $widthBoxImg/5*3;
+	.content
+		width: 100%
+		ul
+			flex-direction: column
+		
+			li
+				margin: 0 0 10px 0
+				text-align: center
+				img
+					width: 40vw * 1.2
+					height: 40vw * 1.2
+				span
+					+fontDoc01(Verdana)
+					font-size: $sizef
+	%fonts
+		font: 3vw Tahoma, sans-serif
+		letter-spacing: -0.05vw
+	li
+		nav &
+			@extend %fonts
+		.block &
+			@extend %fonts

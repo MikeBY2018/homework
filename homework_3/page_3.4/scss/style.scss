@@ -6,9 +6,12 @@ $bgDivThree: #5f9ea0;
 $fontDoc: bold 1.2em Helvetica, Arial, sans-serif;
 $widthBox: 100%;
 $widthBoxImg: 200px;
+$widthScreen: 1170px;
 $displayPr: flex;
 $displaySpan: block;
 $mparam: $widthBoxImg*7/20;
+$sizef: 1em;
+$fontend: ', Arial, sans-serif';
 
 @mixin flexBlock($justify) {
 	display: $displayPr;
@@ -21,7 +24,7 @@ $mparam: $widthBoxImg*7/20;
 }
 
 .container{
-	max-width: 1180px;
+	max-width: $widthScreen;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -109,3 +112,8 @@ footer{
 	min-height: $mparam;
 	line-height: $mparam;
 }
+
+@import 'mediaover680';
+@import 'mediaover461680';
+@import 'mediaunder460';
+

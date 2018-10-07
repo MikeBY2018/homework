@@ -1,0 +1,18 @@
+@media (max-width: $widthScreen - 200px) and (min-width: $widthScreen - 490px)
+	
+	%justifSa
+		justify-content: space-around
+
+	.container
+		max-width: $widthScreen - 250px
+
+	header>div>div
+		@extend %justifSa
+	 
+	.content ul
+		@extend %justifSa
+	.block
+		// flex-grow: 1
+		flex-shrink: 0.5
+		width: 30%
+		margin-right: 40px

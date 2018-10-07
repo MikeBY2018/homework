@@ -46,8 +46,6 @@
 	/*display: block;*/
 	width: 300px;
 	height: 300px;
-	border-radius: 50%;
-	border: 5px solid rgba(10,20,30,0.6);
 	}
 	li span{
 	display: block;

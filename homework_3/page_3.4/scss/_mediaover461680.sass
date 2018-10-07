@@ -1,0 +1,14 @@
+@media (max-width: $widthScreen - 491px) and (min-width: $widthScreen - 709px)
+	%jusifCe
+		justify-content: center
+
+	$widthCont: 30%
+
+	.content 
+		width: 100% - $widthCont	
+		ul
+	 		@extend %jusifCe
+
+	.block
+		width: $widthCont
+		margin: 0
