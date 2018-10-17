@@ -1,0 +1,131 @@
+html,body,article,section,nav,aside,h1,h2,h3,h4,h5,h6,header,footer,address,p,ol,ul,li,dl,dt,
+dd,div,a,strong,small,sup,span,img,iframe,embed,object,video,audio,table,tr,td,th,canvas,svg {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+html {
+    cursor: default;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent
+}
+::-moz-selection {
+    background-color: #eee;
+    color: #000;
+    text-shadow: none
+}
+
+::selection {
+    background-color: #eee;
+    color: #000;
+    text-shadow: none
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+article,
+section,
+nav,
+aside,
+header,
+footer {
+    display: block
+}
+
+video,
+audio,
+canvas {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+strong {
+    font-weight: inherit
+}
+
+strong {
+    font-weight: bolder
+}
+
+sub,
+sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+svg {
+    fill: currentColor
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+a {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation
+}
+
+img,
+a {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none
+}
+
+head {
+    font-family: large
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overscroll-behavior: none;
+    font-family: garamond-premier-pro, serif
+}

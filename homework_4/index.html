@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее задание 5</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script src=""></script>
+</head>
+<body>
+	<form action="GET">
+		<fieldset>
+			<legend>Новая книга:</legend>
+			<label>
+				<span>Тип записи:</span> 
+				<div class = "align">
+					<select name="typeBooks" id="typeBooks">
+					<option></option>
+					<option value="audiobook">Аудиокнига</option>
+					<option value="learnbook">Учебник</option>
+					</select>
+				</div>
+			</label>
+
+			<label>
+				<span>Название книги:</span>
+				<div class = "align">
+					<input type="text" id = "nameBook">
+				</div>
+			</label>
+
+			<label><span>Область науки:</span>
+				<div class = "align">
+					<input type="text" id = "">
+				</div>
+			</label>	
+
+			<label><span>Количество страниц:</span>
+				<div class = "align">
+					<input type="number" id = "">
+				</div>
+			</label>	
+
+			<label><span>Издательство:</span>
+				<div class = "align">
+					<input type="text" id = "">
+				</div>
+			</label>	
+
+			<label><span>Тип переплёта:</span>
+				<div class = "align">
+					<input type="text" id = "">
+				</div>
+			</label>	
+
+			<label><span>Наличие CD, DVD:</span>
+				<div class = "align">
+					<input type="checkbox" name="cddvd" id = "cddvd">
+				</div>
+			</label>	
+
+			<label><span>Автор:</span>
+				<div class = "align">
+					<input type="text" id = "authorBook">
+				</div>
+			</label>
+			<button id = "save">Сохранить</button>
+			<button id = "remove">Очистить</button>			
+		</fieldset>
+	</form>
+</body>
+</html>
