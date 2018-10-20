@@ -7,7 +7,8 @@ function styleMod(){
 	document.getElementsByClassName('wrapper')[0].style.cssText = 'background-color: white';
 }
 function rewrite(){
-	document.getElementsByClassName('wrapper')[0].style.display = 'none';
-	document.getElementsByClassName('wrapper')[0].style.cssText = 'display:flex;flex-wrap: wrap;align-items: flex-start;width: 40%;border: 2px solid black;color: white;';
-	document.getElementsByClassName('wrapper')[0].innerHTML = '<div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>';
+	var wrap = document.getElementsByClassName('wrapper')[0];
+	wrap.classList.remove('wrapper');
+	wrap.classList.add('wrapper1');
+	wrap.innerHTML = '<div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>';
 }
