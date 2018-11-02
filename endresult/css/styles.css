@@ -264,8 +264,14 @@ a:hover{
 .features>div:first-child{
 	background-color: #f48244;
 }
+.features>div:first-child h2{
+	color: rgba(0,0,0,.3);
+}
 .features>div:last-child{
 	background-color: #00acc2;
+}
+.features>div:last-child h2{
+	color: rgba(0,0,0,.3);
 }
 .features>div:hover{
 	transform: scale(1.06);
