@@ -481,7 +481,7 @@
         return scale;
       } // http://bit.ly/2y1Yk2k      
 
-      
+       
     };
 
   })(); 
