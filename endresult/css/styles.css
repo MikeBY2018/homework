@@ -1,0 +1,237 @@
+/*Подключение шрифтов*/
+@font-face {
+	font-family: HurmeGeom;
+	src: url('../fonts/HurmeGeometricSans1.otf');
+}
+@font-face {
+	font-family: HurmeGeomThin;
+	src: url('../fonts/HurmeGeometricSans1Thin.otf');
+}
+
+/*Сброс основных обёрток и установка шрифта*/
+html,body{
+	margin: 0px;
+	padding: 0px;
+	font-family: HurmeGeom, Helvetica, sans-serif;
+	height: 100vh;
+	/*overflow: hidden;	*/
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+/*настройка блоков отображения*/
+/*подложки на страницах*/
+.backg1{
+	background-image: radial-gradient(circle closest-side at 50% 10%, #4b2c55 50px, #2b2040 500px);
+}
+.backg2{
+	background-image: radial-gradient(circle closest-side at 50% 10%, #5e3148 50px, #290e21 500px);
+}
+.backg3{
+	background-image: radial-gradient(circle closest-side at 50% 10%, #173c59 50px, #0c2132 500px);
+}
+.backg4{
+	background-color: #191921;
+}
+
+/*Отображение на странице*/
+.container{
+	height: 100vh;
+	background-image: url('../img/background1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+	position: relative;
+	z-index: 2;
+}
+
+.wrapper{
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+canvas{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	background-position: center; 
+	background-size: cover;
+}
+
+.hidden{
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+/*Настройка элементов*/
+a{	
+	display: inline-block;
+	text-decoration: none;
+	color: #999;
+}
+.icon{
+	width: 35px;
+	height: 35px;
+	margin-right: 5px;
+	fill: currentColor;
+}
+li{
+	position: relative;
+}
+.pin{
+	fill: currentColor;
+	position: absolute;
+	top: -1px;
+	right: -25px;
+	width: 20px;
+	height: 20px;	
+}
+
+/*Оформление шапки*/
+header{
+	min-height: 100px;
+	/*background: #000;*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+header nav{
+	margin-left: auto;
+	padding: 50px 0;
+}
+nav li{	
+	font-size: 14px;
+	letter-spacing: .1em;
+}
+/*Оформление тела*/
+main{
+	display: flex;
+	align-items: flex-end;
+	min-height: 55vh;убрать
+	
+}
+
+/* Оформление кнопки About us*/
+main .button{
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	margin-bottom: 80px;
+	margin-left: 150px;/**/
+}
+main .button:hover{
+	box-shadow: 0px 1px 3px rgba(0,0,0,.6);
+}
+.button a{
+	display: inline-block;
+	padding: 15px 30px;
+	background-image: linear-gradient(90deg, #5b2a5a, #9b3968);
+	background-position: 0px 0px;
+	transition: all 1s ease;
+}
+.button a:hover{
+	/*background-position: 10px 0px;*/
+	background-image: linear-gradient(90deg, #5b2a5a 50px, #9b3968);
+}
+
+/*Оформление подвала сайта*/
+footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+.pages{
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+}
+.pages a{
+	align-self: flex-end;
+	width: 40px;
+	height: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(255,255,255, .5);
+	transition: all 200ms ease;
+
+	margin-bottom: 8px;
+	position: relative;
+}
+.pages a:hover:not([data-number-pages]){
+	border-color: #8d49e0;
+	width: 50px;
+}
+.pages a[data-number-pages]{
+	border: 1px solid rgba(225,255,255, 1);
+	width: 60px;
+	
+}
+.pages a[data-number-pages]::after{
+	content: attr(data-number-pages);
+	position: absolute;
+	left: -40px;
+	top: -8px;
+	font-size: 0.8em;
+}
+
+/* Effect 4: bottom border enlarge */
+nav a {
+	position: relative;
+	margin: 10px 25px;
+	outline: none;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1em;
+}
+.cl-effect-4{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.cl-effect-4 a {
+	padding: 0 0 5px;
+}
+
+.cl-effect-4 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-4 a:hover::after,
+.cl-effect-4 a:focus::after {
+	height: 1px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+.social a{
+	transition: all 200ms ease-out;
+}
+a:hover{
+	color: #fff;	
+}
