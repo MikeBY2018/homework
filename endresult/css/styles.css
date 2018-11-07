@@ -7,12 +7,16 @@
 	font-family: HurmeGeomThin;
 	src: url('../fonts/HurmeGeometricSans1Thin.otf');
 }
+@font-face {
+	font-family: HurmeGeomB;
+	src: url('../fonts/HurmeGeometricSans1Bold.otf');
+}
 
 /*Сброс основных обёрток и установка шрифта*/
 html,body{
 	margin: 0px;
 	padding: 0px;
-	font-family: HurmeGeom, Helvetica, sans-serif;
+	font-family: HurmeGeom, Arial, sans-serif;
 	/*height: 100vh;
 	overflow: hidden;*/	
 }
@@ -88,12 +92,21 @@ a{
 li{
 	position: relative;
 }
+/*Задание позиционирования стрелок*/
 .pin{
 	fill: currentColor;
 	position: absolute;
 	top: -1px;
 	right: -25px;
 	width: 20px;
+	height: 20px;	
+}
+.pin0{
+	fill: currentColor;
+	position: absolute;
+	top: 10px;
+	right: -35px;
+	width: 50px;
 	height: 20px;	
 }
 
@@ -191,7 +204,7 @@ footer{
 	font-size: 0.8em;
 }
 
-/* Effect 4: bottom border enlarge */
+/* Effect bottom border enlarge */
 nav a {
 	position: relative;
 	margin: 10px 25px;
@@ -245,7 +258,7 @@ a:hover{
 	color: #fff;	
 }
 /*оформление 2ой страницы*/
-.features{
+main .features{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -259,11 +272,12 @@ a:hover{
 	justify-content: center;
 	max-width: 720px;
 }
-.features>div{
+main .features>div{
 	box-sizing: border-box;
 	max-width: 50%;
 	text-align: center;
 	font-size: .8em;
+
 	letter-spacing: 1px;
 	color: #fff;
 	padding: 15px 15px;
@@ -273,18 +287,16 @@ a:hover{
 
 	transition: all 300ms ease-out;
 }
-.features>div:first-child{
+main .features>div:first-child{
 	background-color: #f48244;
 }
-.features>div:first-child h2{
+main .features>div:first-child h2, main .features>div:last-child h2{
 	color: rgba(0,0,0,.3);
 }
-.features>div:last-child{
+main .features>div:last-child{
 	background-color: #00acc2;
 }
-.features>div:last-child h2{
-	color: rgba(0,0,0,.3);
-}
+
 h2{
 	margin: 10px 0;
 }
@@ -293,4 +305,53 @@ p{
 }
 .features>div:hover{
 	transform: scale(1.06);
+}
+
+/*оформление 3ей страницы*/
+.this_page{
+	font: 1em HurmeGeomB, Arial, sans-serif;
+	color: #fff;
+}
+
+main .servises{
+	max-width: 700px;
+	color: #fff;
+	/*padding: 30px 50px;*/
+}
+main .servises li{
+	padding: 110px 25px 30px;
+}
+main .servises li h2{
+	font: 40px HurmeGeomB, Arial, sans-serif;
+}
+main .servises li p{
+
+	font-size: 0.8em;
+	padding: 15px 40% 25px 0;
+}
+main .servises li a{
+	position: relative;
+	border: 1px solid #fff;
+	padding: 10px 20px;
+}
+main .servises li{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+main .servises .uxui{
+	background-image: url(../img/Slide1.jpg);
+}
+main .servises .branding{
+	background-image: url(../img/Slide2.jpg);
+}
+main .servises .logoDesign{
+	background-image: url(../img/Slide3.jpg);
+}
+main .servises .emotionalDesign{
+	background-image: url(../img/Slide4.jpg);
+}
+
+main .servises li{
+	display: none;
 }
