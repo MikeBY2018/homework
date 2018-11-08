@@ -7,10 +7,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="../css/styles.css">
-
-	<script src = "https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
-	<script src = "../js/starsbackground.js" defer></script>
-	<script src = "../js/main.js" defer></script>
+	
 </head>
 <body>
 <div class="backg3">
@@ -41,12 +38,16 @@
 						<title></title>
 						<path d="M9 15L17.6603 0H0.339746L9 15Z"/>						
 					</symbol>
+					<symbol id="icon-read">
+							<line x1="0" y1="20" x2="140" y2="20" stroke-width="3" />
+							<polygon points="145,20 130,35 130,5" stroke-width="3" />	
+					</symbol>
 				</svg>
 				<!--Основная навигация в шапке-->
 				<nav>
 					<ul class="cl-effect-4">
 						<li><a href="#" class="this_page">Services</a></li>
-						<li><a href="#">Portfolio
+						<li><a href="#" id="portfolio">Portfolio
 								<svg class = "pin">
 									<use xlink:href="#icon-down"></use>
 								</svg>
@@ -62,8 +63,29 @@
 				</nav>
 			</header>
 			<main>
-				<div class="content servises">
-					<ul>
+				<div id="content-portfolio">
+							<div class="content-portfolio-block">
+								<div class="page41">
+									<a href="#">
+										<svg class="icon-read" width="50" height="16" viewBox="30 0 150 40">
+											<use xlink:href="#icon-read"></use>
+										</svg>
+									</a>
+								</div>
+								<div class="page42"></div>
+								<div class="page43"></div>
+								<div class="page44">
+									<a href="#">
+										<svg class="icon-read" width="50" height="16" viewBox="30 0 150 40">
+											<use xlink:href="#icon-read"></use>
+										</svg>
+									</a>
+									<span>Website</span>									
+								</div>
+							</div>
+				</div>
+				<div class="servises" id="viewport">
+					<ul id="slidewrapper">
 						<li class="uxui">
 							<h2>UI/UX Design</h2>
 							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point using Lorem ipsum is that it has a more-or-less normal</p>
@@ -133,7 +155,10 @@
 			</footer>
 		</div>	
 	</div> <!-- -->
-	
+
+	<script src = "https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+	<script src = "../js/starsbackground.js" defer></script>
+	<script src = "../js/main.js" defer></script>
 	<!--Мерцающий фон-->
 	<canvas id="space" class="backg3"></canvas>
 </div>
