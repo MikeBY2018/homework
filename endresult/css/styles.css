@@ -17,8 +17,8 @@ html,body{
 	margin: 0px;
 	padding: 0px;
 	font-family: HurmeGeom, Arial, sans-serif;
-	height: 100vh;
-	overflow: hidden;/**/	
+	/*height: 100vh;
+	overflow: hidden;*/	
 }
 
 ul{
@@ -29,7 +29,7 @@ ul{
 /*настройка блоков отображения*/
 /*подложки на страницах*/
 body>div{
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -49,7 +49,6 @@ body>div{
 
 /*Отображение на странице*/
 .container{
-	height: 100%;
 	background-image: url('../img/background1.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -73,7 +72,7 @@ canvas{
 	position: relative;
 }*/
 #content-portfolio{
-	width: 100vw;
+	/*width: 100vw;*/
 	background-color: rgba(0,0,0, .6);
 	position: absolute;
 	top: 0;
@@ -96,7 +95,8 @@ canvas{
 			-ms-flex-wrap: wrap;
 			-o-flex-wrap: wrap;
 			flex-wrap: wrap;	
-	margin: 15vh auto;	
+	margin: 15vh auto;
+	justify-content: center;	
 }
 .content-portfolio-block div{
 	display: -webkit-flex;
@@ -116,8 +116,9 @@ canvas{
 	flex-direction: column-reverse;
 	box-sizing: border-box;
 	justify-content: space-between;
-
-	width: 485px;
+	
+	min-width: 300px;
+	flex-basis: 46%;
 	min-height: 230px;
 	margin: 5px;
 	padding: 30px;
@@ -142,7 +143,7 @@ a{
 	display: inline-block;
 	text-decoration: none;
 	color: #999;
-	position: relative; /*для того чтобы позиционировать стрелки после надписи ссылки*/
+	position: relative;/*для того чтобы позиционировать стрелки после надписи ссылки*/
 }
 .icon{
 	width: 35px;
@@ -151,12 +152,21 @@ a{
 	fill: currentColor;
 }
 .icon-read{
-	position: absolute;
 	width: 50px;
 	height: 15px;
 	margin-right: 5px;
 	fill: currentColor;
 	stroke: currentColor;
+}
+.icon-read{
+	width: 50px;
+	height: 15px;
+	margin-right: 5px;
+	fill: currentColor;
+	stroke: currentColor;
+}
+.icon-pos{
+	position: absolute;
 	right: -45px;
 	top: 14px;
 }
@@ -381,7 +391,6 @@ p{
 }
 
 main .servises{
-	max-width: 700px;
 	color: #fff;
 	overflow: hidden;
 	height: 330px;
@@ -392,16 +401,22 @@ main .servises li{
 }
 main .servises li h2{
 	font: 40px HurmeGeomB, Arial, sans-serif;
+	width: 700px;
 }
 main .servises li p{
-
 	font-size: 0.8em;
-	padding: 15px 40% 25px 0;
+	padding: 15px 0 25px 0;
+	max-width: 400px;
 }
 main .servises li a{
 	position: relative;
-	border: 1px solid #fff;
+	color: #ccc;
+	border: 1px solid #ccc;
 	padding: 10px 20px;
+}
+main .servises li a:hover{
+	border: 1px solid #fff;
+	color: #fff;
 }
 main .servises li{
 	background-position: center;
@@ -423,4 +438,56 @@ main .servises .emotionalDesign{
 
 #slidewrapper{
 	transition: 1s ease-in;
+}
+/*Оформление 4ой стр*/
+
+.shadowbox{
+	max-width: 860px;
+	margin: 0 auto;
+	padding-top: 5vh;
+}
+.contacts{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	box-shadow: 0 10px 20px 10px rgba(0,0,0,0.2);
+}
+.contacts section{
+	flex: 1 1 350px;
+	padding: 10vh 30px;
+}
+.contacts .aboutus{
+	background-color: #ededed;
+}
+.contacts .aboutus ul{
+	text-align: center;
+}
+.contacts .aboutus ul li{
+	display: inline-block;
+	margin: 0 10px;
+}
+.contacts .contaktus{
+	
+}
+
+@media (min-width: 960px){
+	body>div{
+		min-height: 100vh;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	.container{
+		height: 100vh;
+	}
+	#content-portfolio{
+		height: 100vh;
+	}
 }
