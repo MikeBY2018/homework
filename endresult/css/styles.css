@@ -217,7 +217,7 @@ main{
 /* Оформление кнопки About us*/
 main .button{
 	box-shadow: 0 0 5px rgba(0,0,0,.4);
-	margin: 44vh 50% 80px 0;
+	margin: 44vh 50% 11vh 0;
 	
 }
 main .button:hover{
@@ -260,7 +260,7 @@ footer{
 	border-color: rgba(255,255,255, .5);
 	transition: all 200ms ease;
 
-	margin-bottom: 8px;
+	margin: 5px 0 4px;
 	position: relative;
 }
 .pages a:hover:not([data-number-pages]){
@@ -394,7 +394,7 @@ main .servises{
 	color: #fff;
 	overflow: hidden;
 	height: 330px;
-	margin: 7vh 0;
+	margin: 6vh 0 7vh;
 }
 main .servises li{
 	padding: 99px 25px 30px;
@@ -457,11 +457,25 @@ main .servises .emotionalDesign{
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
+	position: relative;
 	box-shadow: 0 10px 20px 10px rgba(0,0,0,0.2);
 }
 .contacts section{
-	flex: 1 1 350px;
-	padding: 10vh 30px;
+	flex: 1 1 270px;
+	padding: 10vh 40px;
+}
+.contacts section h2{
+	font: 1.4em HurmeGeomB, Arial, sans-serif;
+}
+.contacts section h2 + p{
+	font: 0.9em HurmeGeomB, Arial, sans-serif;
+	max-width: 250px;
+	margin-bottom: 20px;
+	letter-spacing: 0.05vw;
+}
+.contacts section>p + p {
+	font-size: 0.8em;
+	margin-bottom: 30px;
 }
 .contacts .aboutus{
 	background-color: #ededed;
@@ -471,12 +485,116 @@ main .servises .emotionalDesign{
 }
 .contacts .aboutus ul li{
 	display: inline-block;
-	margin: 0 10px;
+	margin: 10px 10px;
 }
 .contacts .contaktus{
-	
+	color: #ddc;
+	background-color: rgba(10,10,50, 0.1);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.contacts .contaktus form{
+	margin-top: 40px;
+}
+.contacts .contaktus [placeholder]{
+	background-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	outline: none;
+	border: none;
+
+	color: #fff;
+	display: block;
+	border-bottom: 1px solid #ddc;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	font: 0.8em HurmeGeom, Arial, sans-serif;
+}
+.contacts .contaktus [placeholder]:placeholder-shown{
+	text-indent: 1em;
 }
 
+.contacts .contaktus .checkbx{
+	margin: 40px 0 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;/**/
+}
+.checkbx>p{
+	-webkit-flex: 1 1 50%;
+	-moz-flex: 1 1 50%;
+	-ms-flex: 1 1 50%;
+	-o-flex: 1 1 50%;
+	flex: 1 1 50%;/**/
+	min-width: 130px;
+	margin-bottom: 20px;
+	font: 0.8em HurmeGeomB, Arial, sans-serif;
+	letter-spacing: 0.09vw;	
+	position: relative;
+}
+.checkbx input{
+	display: none;
+}
+.checkbx label::before{
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+
+	position: absolute;
+	top: -2px;
+	left: 0;
+	background-color: rgba(50,50,50, 0.5);
+}
+.checkbx label{
+	padding-left: 28px;
+}
+.checkbx input:checked + label:before{
+	background-image: -webkit-linear-gradient(bottom left, rgba(10,10,10,0.2) 45%, white 50%, rgba(10,10,10,0.2) 55%),
+	-webkit-linear-gradient(bottom left, rgba(10,10,10,0.2) 45%, white 50%, rgba(10,10,10,0.2) 55%);
+	background-image: -o-linear-gradient(bottom left, rgba(10,10,10,0.2) 45%, white 50%, rgba(10,10,10,0.2) 55%),
+	-o-linear-gradient(bottom left, rgba(10,10,10,0.2) 45%, white 50%, rgba(10,10,10,0.2) 55%);
+	background-image: linear-gradient(to top right, rgba(10,10,10,0.2) 45%, white 50%, rgba(10,10,10,0.2) 55%),
+	linear-gradient(to top left, rgba(10,10,10,0.2) 45%, white 50%, rgba(10,10,10,0.2) 55%);
+}
+#closedContact{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 2px rgba(120,120,120,0.2);
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	transition: .5s ease;
+	cursor: pointer;
+
+	background-image: -webkit-linear-gradient(bottom left, rgba(10,10,10,0.1) 45%, white 50%, rgba(10,10,10,0.1) 55%),
+	-webkit-linear-gradient(bottom left, rgba(10,10,10,0.1) 45%, white 50%, rgba(10,10,10,0.1) 55%);
+	background-image: -o-linear-gradient(bottom left, rgba(10,10,10,0.1) 45%, white 50%, rgba(10,10,10,0.1) 55%),
+	-o-linear-gradient(bottom left, rgba(10,10,10,0.1) 45%, white 50%, rgba(10,10,10,0.1) 55%);
+	background-image: linear-gradient(to top right, rgba(10,10,10,0.1) 45%, white 50%, rgba(10,10,10,0.1) 55%),
+	linear-gradient(to top left, rgba(10,10,10,0.1) 45%, white 50%, rgba(10,10,10,0.1) 55%);
+}			
+#closedContact:hover{
+	transform: scale(1.2,1.2) rotate(360deg);
+}
 @media (min-width: 960px){
 	body>div{
 		min-height: 100vh;
@@ -486,6 +604,7 @@ main .servises .emotionalDesign{
 	}
 	.container{
 		height: 100vh;
+		overflow: hidden;
 	}
 	#content-portfolio{
 		height: 100vh;
