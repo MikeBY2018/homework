@@ -391,12 +391,8 @@ main .features>div{
 
 /*Анимация появления текста*/
 @keyframes textOpacity{
-	from{
-		opacity: 0;
-	}
-	to{
-		opacity: 1;
-	}
+	from{opacity: 0;}
+	to{	opacity: 1;}
 }
 /*----------*/
 
@@ -519,6 +515,7 @@ main .servises .emotionalDesign{
 	flex-wrap: wrap;
 	position: relative;
 	box-shadow: 0 10px 20px 10px rgba(0,0,0,0.2);
+	overflow: hidden;
 }
 .contacts section{
 	flex: 1 1 270px;
@@ -666,6 +663,30 @@ main .servises .emotionalDesign{
 [placeholder="Message"] + div{
 	margin-top: 30px;
 }
+/*Буквы на фоне*/
+.aboutus{}
+.contaktus{}
+
+.aboutus:before{
+	content: "About";
+	font: 20vh/11vh HurmeGeomB, Arial, sans-serif;
+	position: absolute;
+	color: rgba(0,0,0,0.1);
+	top: 0;
+	left: 10%;
+	z-index: 1;
+}
+
+.contaktus:after{
+	content: "Conta";
+	font: 20vh/20vh HurmeGeomB, Arial, sans-serif;
+	position: absolute;
+	color: rgba(255,200,200,0.1);
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
 
 
 
@@ -796,7 +817,7 @@ main .servises .emotionalDesign{
 }
 
 
-
+/*медиа-запросы*/
 
 @media screen and (min-width: 960px){
 	body>div{
