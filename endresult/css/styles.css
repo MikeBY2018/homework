@@ -216,23 +216,25 @@ main{
 
 /* Оформление кнопки About us*/
 main .button{
-	box-shadow: 0 0 5px rgba(0,0,0,.4);
 	margin: 44vh 50% 11vh 0;
-	
 }
-main .button:hover{
-	box-shadow: 0px 1px 3px rgba(0,0,0,.6);
-}
-.button a{
+
+.button{
 	display: inline-block;
+	box-shadow: 0 1px 7px 1px rgba(0,0,0,.6);
 	padding: 15px 30px;
 	background-image: linear-gradient(90deg, #5b2a5a, #9b3968);
 	background-position: 0px 0px;
-	transition: all 1s ease;
+
 }
-.button a:hover{
+.button:hover{
 	/*background-position: 10px 0px;*/
-	background-image: linear-gradient(90deg, #5b2a5a 50px, #9b3968);
+	background-image: linear-gradient(95deg, #5b2a5a 50px, #9b3968);
+	
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,.4);
+}
+.button:hover a{
+	color: #fff;
 }
 
 /*Оформление подвала сайта*/
@@ -362,8 +364,43 @@ main .features>div{
 	cursor: pointer;
 	min-width: 200px;
 
-	transition: all 300ms ease-out;
+	transition: all 500ms ease-in-out;
+
 }
+.firstops{
+	-webkit-animation: textOpacity 5s ease 500ms 2 normal backwards;
+	-o-animation: textOpacity 5s ease 500ms 2 normal backwards;
+	animation: textOpacity 5s ease 500ms 2 normal backwards;
+}
+.secondops{
+	-webkit-animation: textOpacity 5s ease 1000ms 2 normal backwards;
+	-o-animation: textOpacity 5s ease 1000ms 2 normal backwards;
+	animation: textOpacity 5s ease 1000ms 2 normal backwards;
+}
+.thirdops{
+	-webkit-animation: textOpacity 5s ease 1500ms 2 normal backwards;
+	-o-animation: textOpacity 5s ease 1500ms 2 normal backwards;
+	animation: textOpacity 5s ease 1500ms 2 normal backwards;
+}
+.fourthops{
+	-webkit-animation: textOpacity 5s ease 2000ms 2 normal backwards;
+	-o-animation: textOpacity 5s ease 2000ms 2 normal backwards;
+	animation: textOpacity 5s ease 2000ms 2 normal backwards;
+}
+
+
+/*Анимация появления текста*/
+@keyframes textOpacity{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+/*----------*/
+
+
 main .features>div:first-child{
 	background-color: #f48244;
 }
@@ -371,7 +408,7 @@ main .features>div:first-child h2, main .features>div:last-child h2{
 	color: rgba(0,0,0,.3);
 }
 main .features>div:last-child{
-	background-color: #43d8de; 
+	background-color: #43d8de;
 }
 
 h2{
@@ -380,9 +417,30 @@ h2{
 p{
 	margin: 0;
 }
+
+/*наведение на блоки с текстом*/
 .features>div:hover{
 	transform: scale(1.06);
+	-webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+	box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 }
+
+.features>div:first-child:hover, .features>div:last-child:hover{
+	background-color: transparent;
+}
+.features>div:first-child:hover h2, .features>div:last-child:hover h2{
+	color: rgba(255,255,255,1);/**/
+}
+.features>div:first-child + div:hover{
+	background-color: #cb5a86;
+}
+.features>div:nth-last-child(2):hover{
+	background-color: #37ac7f;
+}
+.features>div:first-child + div:hover h2, .features>div:nth-last-child(2):hover h2{
+	color: rgba(0,0,0,0.3);/**/
+}
+
 
 /*оформление 3ей страницы*/
 .this_page{
@@ -597,6 +655,17 @@ main .servises .emotionalDesign{
 #closedContact:hover{
 	transform: scale(1.2,1.2) rotate(360deg);
 }
+[type="submit"]{
+	background: none;
+	outline: none;
+	border: none;
+	color: #ccc;
+	font: 0.8em HurmeGeomB, Arial, sans-serif;
+	letter-spacing: 0.05em;
+}
+[placeholder="Message"] + div{
+	margin-top: 30px;
+}
 
 
 
@@ -607,7 +676,10 @@ main .servises .emotionalDesign{
 .adress div{
 
 }
-/*Анимация планеты*/
+
+
+
+/*Анимация планеты и комет */
 .adress div:after{
 	content: "";
 	display: inline-block;
@@ -619,7 +691,7 @@ main .servises .emotionalDesign{
 	-webkit-background-size: cover;
 	background-size: cover;
 	border-radius: 50%;
-	box-shadow: -2px 0 10px rgba(0,0,0,0.3) inset;
+	/*box-shadow: -2px 0 10px rgba(0,0,0,0.3) inset;*/
 
 	-webkit-animation: planet 20s linear 1ms 10 normal none;
 	-o-animation: planet 20s linear 1ms 10 normal none;
