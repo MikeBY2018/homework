@@ -391,17 +391,14 @@ p{
 }
 
 main .servises{
-	color: #fff;
-	overflow: hidden;
-	height: 330px;
-	margin: 6vh 0 7vh;
+
 }
 main .servises li{
 	padding: 99px 25px 30px;
 }
 main .servises li h2{
 	font: 40px HurmeGeomB, Arial, sans-serif;
-	width: 700px;
+	
 }
 main .servises li p{
 	font-size: 0.8em;
@@ -435,11 +432,16 @@ main .servises .logoDesign{
 main .servises .emotionalDesign{
 	background-image: url(../img/Slide4.jpg);
 }
-
+#windowSlider{
+	color: #fff;
+	width: 700px;
+	margin: 6vh 0 7vh;
+	overflow: hidden;
+}
 #slidewrapper{
 	transition: 1s ease-in;
 }
-/*Оформление 4ой стр*/
+/*Оформление AboutUS стр*/
 
 .shadowbox{
 	max-width: 860px;
@@ -595,7 +597,31 @@ main .servises .emotionalDesign{
 #closedContact:hover{
 	transform: scale(1.2,1.2) rotate(360deg);
 }
-@media (min-width: 960px){
+
+
+
+/*4 page*/
+.adress{
+	margin: 17vh 0;
+}
+.adress h3{
+	color: #ccc;
+	font: 2em HurmeGeom, Arial, sans-serif;
+}
+.adress h3, .adress a{
+	text-align: center;
+}
+
+.adress a{
+	display: block;
+	font: 1.1em HurmeGeom, Arial, sans-serif;
+	margin-bottom: 20px;
+}
+
+
+
+
+@media screen and (min-width: 960px){
 	body>div{
 		min-height: 100vh;
 		background-repeat: no-repeat;
@@ -608,5 +634,14 @@ main .servises .emotionalDesign{
 	}
 	#content-portfolio{
 		height: 100vh;
+	}
+}
+
+@media screen and (max-width: 420px){
+	nav a {
+		margin-left: 10px;
+	}
+	main .servises li h2{
+	font: 8.5vw HurmeGeomB, Arial, sans-serif;
 	}
 }
