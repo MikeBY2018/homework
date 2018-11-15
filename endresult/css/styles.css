@@ -216,7 +216,7 @@ main{
 
 /* Оформление кнопки About us*/
 main .button{
-	margin: 44vh 50% 11vh 0;
+	margin: 55vh 50% 0 0;
 }
 
 .button{
@@ -353,7 +353,7 @@ main .features{
 }
 main .features>div{
 	box-sizing: border-box;
-	max-width: 50%;
+	flex: 1 1 250px;
 	text-align: center;
 	font-size: .8em;
 
@@ -365,8 +365,8 @@ main .features>div{
 	min-width: 200px;
 
 	transition: all 500ms ease-in-out;
-
 }
+
 .firstops{
 	-webkit-animation: textOpacity 5s ease 500ms 2 normal backwards;
 	-o-animation: textOpacity 5s ease 500ms 2 normal backwards;
@@ -681,7 +681,7 @@ main .servises .emotionalDesign{
 	content: "Conta";
 	font: 20vh/16vh HurmeGeomB, Arial, sans-serif;
 	position: absolute;
-	color: rgba(255,200,200,0.1);
+	color: rgba(100,100,110,0.1);
 	bottom: 0;
 	right: 0;
 	z-index: -1;
@@ -844,5 +844,8 @@ main .servises .emotionalDesign{
 	}
 	.adress h3{
 	font-size: 8vw;
+	}
+	main .button{
+	margin: 45vh 0 10vh 0;
 }
 }
